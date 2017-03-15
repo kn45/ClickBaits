@@ -1,0 +1,8 @@
+*.pyc
+*.pkl
+GetRawSrc.sh
+data_train/*
+data_test/*
+data_raw/*
+data_pred/*
+labeling/*
