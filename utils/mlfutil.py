@@ -21,10 +21,10 @@ def draw_progress(iteration, total, pref='Progress:', suff='',
     bar = '█' * filledlen + '-' * (barlen - filledlen)
     out_str = '\r%s |%s| %s%s %s' % (pref, bar, pcts, '%', suff)
     out_str = '\x1b[0;34;40m' + out_str + '\x1b[0m'
-    sys.stdout.write(out_str),
+    sys.stderr.write(out_str),
     if iteration == total:
-        sys.stdout.write('\n')
-    sys.stdout.flush()
+        sys.stderr.write('\n')
+    sys.stderr.flush()
 
 
 class CatEncoder(object):
