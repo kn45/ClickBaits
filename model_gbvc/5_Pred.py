@@ -12,7 +12,7 @@ import xgboost as xgb
 logging.basicConfig(level=logging.INFO,
                     format="%(asctime)s [%(levelname)s]: %(message)s")
 
-w2v_file = '/data1/qspace/travischen/fasttext_model/model_file/fasttext_skipgram.model.bin'
+w2v_file = 'xxxxx/fasttext_skipgram.model.bin'
 w2v_model = None
 model_file = 'gbt_model.pkl'
 mdl_bst = None
@@ -62,7 +62,7 @@ def init():
     # init seg
     global hdl_seg
     hdl_seg = segjb.SegJb()
-    hdl_seg.init(user_dict='/data1/qspace/travischen/files/367w.dict.utf-8')
+    hdl_seg.init(user_dict='~/files/367w.dict.utf-8')
     hdl_seg.set_param(delim=' ', keep_stopwords=True, keep_puncs=False)
 
     # init fasttext-w2v
