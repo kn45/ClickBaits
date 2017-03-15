@@ -1,6 +1,5 @@
 #!/usr/bin/env python
 
-
 import cPickle
 import fasttext
 import segjb
@@ -8,7 +7,6 @@ import numpy as np
 import os
 import sys
 from mlfutil import *
-
 
 data_file = sys.argv[1]
 
@@ -54,8 +52,7 @@ def main():
     for nr, rec in enumerate(data):
         title = rec[1]
         title_feats = title_encoding(title).astype('|S10')
-        print >> fo, \
-            '\t'.join(np.hstack([rec[0:1], title_feats]))
+        print >> fo, '\t'.join(np.hstack([rec[0:1], title_feats]))
         draw_progress(nr, data_size-1)
     fo.close()
 
