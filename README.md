@@ -11,6 +11,7 @@ Specified document in detail would be released later.
 | gbvc | GBDT                       | embedded sentence vector                 |
 | gbvk | GBDT                       | embedded sentence vector + key words     |
 | gblr | GBDT + LR                  | embedded sentence vector + key words     |
+| mlpe | MLP                        | embedded sentence vector + key words     |
 | rnnw | RNN(LSTM etc.)             | one-hot words with pre-trained embedding matrix |
 | mrnn | multi-layer RNN(LSTM etc.) | one-hot words with pre-trained embedding matrix |
 | rnnc | RNN(LSTM etc.)             | one-hot character without embedding      |
